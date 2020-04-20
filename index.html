@@ -14,6 +14,9 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,36 +28,38 @@
         </video>
 
         <div class="wrapper">
+            <!-- <button id="munch_loading_iframe" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/regular">Start
+                Your Order Here</button> -->
+
+                <button id="munch_loading_iframe_picture" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/picture">ORDER ONLINE</button>
+
+                
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h3></h3>
+                    <img src="assets\images\RIBBYS-01.png" alt="logo">
                 </div>
 
-                <ul class="list-unstyled components">
-                    <p>Home</p>
-                    <li>
-                        <a href="#">Instagram</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Google</a>
-                    </li>
-                    <li>
-                        <a href="#">FaceBook</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Youtube</a>
-                    </li>
-                    <li>
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#">Pintrest</a>
-                    </li>
-                </ul>
-
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-skype"></a>
+                <a href="#" class="fa fa-android"></a>
+                <a href="#" class="fa fa-dribbble"></a>
+                <a href="#" class="fa fa-vimeo"></a>
+                <a href="#" class="fa fa-tumblr"></a>
+                <a href="#" class="fa fa-vine"></a>
+                <a href="#" class="fa fa-foursquare"></a>
+                <a href="#" class="fa fa-stumbleupon"></a>
+                <a href="#" class="fa fa-flickr"></a>
+                <a href="#" class="fa fa-yahoo"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-rss"></a>
             </nav>
 
             <!-- Page Content Holder -->
@@ -68,42 +73,50 @@
                             <span></span>
                             <span></span>
                         </button>
+                        <div class="row col-3">
+                            <!-- Trigger/Open The Modal -->
+                            <button id="myBtn">Menu</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <a target="javascript:void(0)" style="cursor:pointer"
+                                        id="munch_loading_iframe_picture"
+                                        iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/picture">Order
+                                        Online</a>
+                                    <img src="assets\images\menu.jpg" alt="menu" class="img-responsive">
+                                </div>
+
+                            </div>
+                            
+                        </div>
                     </div>
                 </nav>
                 <!-- Grid System Starts -->
                 <div class="row justify-content-md-center">
                     <div class="col-9">
                         2 of 3 (wider)
-                      </div>
-                      <div class="col-3">
-                          <button>Order Now</button>
-                          <div class="row col-3">
-                            <button>LOCATION</button>
-                          </div>
-                          <div class="row col-3">
-                            <button>Menu</button>
-                          </div>
-                      </div>
-                      
+                    </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <!-- Start of Caroscel -->
-                        <!-- Flickity HTML init -->
-<div class="gallery js-flickity">
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-    <div class="gallery-cell"></div>
-  </div>
-                    </div>
+                    <!-- Start of Caroscel -->
+                    <!-- Flickity HTML init -->
+                    <!-- <div class="gallery js-flickity">
+                            <img class="img-fluid" src="assets\images\Wings Flavor.jpeg" alt="Wings" id="wings">
+                            <img class="img-fluid" src="assets\images\Ribs.png" alt="ribs" id="ribs">
+                            <img src="assets\images\Fries.jpeg" alt="fries" id="fries">
+                            <img src="assets\images\Chcken Sandwich.jpeg" alt="cs" id="chickensandwich">
+                        </div> -->
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -117,14 +130,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-            <!-- Font Awesome JS -->
+    <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-    crossorigin="anonymous"></script>
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
     <!--  jQuery 1.7+  -->
-<script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery-1.9.1.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script>
 </body>
 
 </html>
