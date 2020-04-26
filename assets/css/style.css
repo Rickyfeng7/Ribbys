@@ -23,9 +23,14 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+.bg-light{
+  background-color:transparent !important ; 
+}
+
+
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    /* background: #fff; */
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -52,6 +57,14 @@ a, a:hover, a:focus {
 
 .container {
     max-width: 100%
+}
+
+/* ---------------------------------------------------
+    Container STYLE
+----------------------------------------------------- */
+
+#top-box{
+  color:Black;
 }
 /* ---------------------------------------------------
     SIDEBAR STYLE

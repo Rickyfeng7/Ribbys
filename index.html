@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Ribby</title>
-
+    <link rel="stylesheet" href="https://ribbyswingsandribs.com/">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -22,18 +22,32 @@
 <body>
     <!-- Container -->
     <div class="container">
-        <!-- The video -->
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/images/Walkaround.MP4" type="video/mp4">
-        </video>
+        <div class="row">
+            <div class="col-" id="top-box"> 
+               <h1> 1 of 2 </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"> 
+            </div>
+            <!-- The video -->
+            <div class="col-3" id="video"> 
+                <div class="embed-responsive embed-responsive-21by9">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="assets/images/Walkaround.MP4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="col-3"> 
+            </div>
+        </div>
 
         <div class="wrapper">
             <!-- <button id="munch_loading_iframe" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/regular">Start
                 Your Order Here</button> -->
 
                 <button id="munch_loading_iframe_picture" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/picture">ORDER ONLINE</button>
-
-                
+  
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -42,24 +56,24 @@
 
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
+                <!-- <a href="#" class="fa fa-google"></a>
                 <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-youtube"></a> -->
                 <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-pinterest"></a>
+                <!-- <a href="#" class="fa fa-pinterest"></a>
                 <a href="#" class="fa fa-snapchat-ghost"></a>
                 <a href="#" class="fa fa-skype"></a>
                 <a href="#" class="fa fa-android"></a>
                 <a href="#" class="fa fa-dribbble"></a>
                 <a href="#" class="fa fa-vimeo"></a>
                 <a href="#" class="fa fa-tumblr"></a>
-                <a href="#" class="fa fa-vine"></a>
-                <a href="#" class="fa fa-foursquare"></a>
+                <a href="#" class="fa fa-vine"></a> -->
+                <!-- <a href="#" class="fa fa-foursquare"></a>
                 <a href="#" class="fa fa-stumbleupon"></a>
                 <a href="#" class="fa fa-flickr"></a>
                 <a href="#" class="fa fa-yahoo"></a>
                 <a href="#" class="fa fa-reddit"></a>
-                <a href="#" class="fa fa-rss"></a>
+                <a href="#" class="fa fa-rss"></a> -->
             </nav>
 
             <!-- Page Content Holder -->
@@ -115,6 +129,7 @@
         </div>
     </div>
     </div>
+    <script type="text/javascript" src="https://rickyfeng7.github.io/Ribbys/"></script> 
     <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
