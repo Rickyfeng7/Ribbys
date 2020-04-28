@@ -33,7 +33,7 @@ a, a:hover, a:focus {
 }
 
 .card-header{
-  background-image: linear-gradient(black, red);;
+  background-image: linear-gradient(rgb(148, 8, 8),orange, red);
 }
 
 .navbar {
