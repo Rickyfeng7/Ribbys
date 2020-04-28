@@ -4,15 +4,15 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('../images/Chcken Sandwich.jpeg'), linear-gradient(black, red);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border: 2px solid #e9385a;
-    background-repeat: no-repeat;
-}
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('../images/Chcken Sandwich.jpeg'), linear-gradient(black, red);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      border: 2px solid #e9385a;
+      background-repeat: no-repeat;
+  }
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -32,6 +32,9 @@ a, a:hover, a:focus {
   background-color:transparent !important ; 
 }
 
+.card-header{
+  background-image: linear-gradient(black, red);;
+}
 
 .navbar {
     padding: 15px 10px;
@@ -275,17 +278,19 @@ a.article, a.article:hover {
   /* Style the button used to pause/play the video */
   #myBtn {
     width: 200px;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
     border: none;
-    background: #000;
     color: #fff;
+    background-color: #007bff;
+    border-radius: .25rem;
     cursor: pointer;
   }
   
   #myBtn:hover {
-    background: #ddd;
-    color: black;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: .25rem;
   }
 
   .row > .column {
@@ -398,12 +403,13 @@ a.article, a.article:hover {
   }
   
   img{
-      width: 60%;
+      width: 100%;
   }
 
   img.demo {
     opacity: 0.6;
   }
+  
   
   .active,
   .demo:hover {
@@ -418,6 +424,9 @@ a.article, a.article:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
+  #logo{
+    width: 33%;
+  }
   
 * {
     -webkit-box-sizing: border-box;
@@ -522,3 +531,6 @@ a:active{
   color: blue;
   text-decoration: underline;
 }
+
+h2{
+  color:black;
