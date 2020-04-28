@@ -33,7 +33,8 @@ a, a:hover, a:focus {
 }
 
 .card-header{
-  background-image: linear-gradient(blue,black, blue);
+  background-image: linear-gradient(black,  rgb(16, 16, 133), black);
+  border:black;
 }
 
 .navbar {
@@ -541,5 +542,4 @@ h3{
 }
 h4{
   color:black;
-
 }
