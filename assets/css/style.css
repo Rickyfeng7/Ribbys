@@ -10,7 +10,6 @@
       width: 100%;
       height: 100%;
       background-size: cover;
-      border: 2px solid #e9385a;
       background-repeat: no-repeat;
   }
 
@@ -39,18 +38,23 @@ a, a:hover, a:focus {
 }
 
 .navbar {
+  background: aliceblue;
     padding: 15px 10px;
-    /* background: #fff; */
+    background: #fff;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+/* Nav */
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
+}
+.nav-tabs {
+  background: aliceblue;
 }
 
 .line {
@@ -75,113 +79,16 @@ a, a:hover, a:focus {
     Container STYLE
 ----------------------------------------------------- */
 
-#top-box{
+ #top-box{
   margin: 0 auto;
   color:white;
 }
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-    perspective: 1500px;
-}
-
-
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #000000;
-    color: #fff;
-    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: bottom left;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-    transform: rotateY(100deg);
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #000000;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    /* border-bottom: 1px solid #47748b; */
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #000000;
-    background: #fff;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #000000;
-}
-
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
 
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
+/* #content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
@@ -221,7 +128,7 @@ a.article, a.article:hover {
     opacity: 1;
     margin: 5px auto;
 }
-
+ */
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -259,7 +166,7 @@ a.article, a.article:hover {
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
-    position: fixed;
+    /* position: fixed; */
     margin-top: auto;
     margin-bottom: auto;
     min-width: 50%;
@@ -267,6 +174,9 @@ a.article, a.article:hover {
     
   }
   
+#walkthrough{
+  background-image: linear-gradient(black, gray);
+}
   /* Add some content at the bottom of the video/page */
   .content {
     position: fixed;
@@ -283,8 +193,8 @@ a.article, a.article:hover {
     font-size: 16px;
     padding: 8px;
     border: none;
-    color: #fff;
-    background-color: #007bff;
+    /* color: #fff;
+    background-color: #007bff; */
     border-radius: .25rem;
     cursor: pointer;
   }
@@ -429,26 +339,7 @@ a.article, a.article:hover {
   #logo{
     width: 33%;
   }
-  
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  body { font-family: sans-serif; }
-  
-  .gallery {
-    background: #EEE;
-  }
-  
-  .gallery-cell {
-    width: 66%;
-    height: 100px;
-    margin-right: 10px;
-    /* background: #8C8; */
-    counter-increment: gallery-cell;
-  }
-  
+/*   
   /* cell number */
   .gallery-cell:before {
     display: block;
@@ -457,27 +348,6 @@ a.article, a.article:hover {
     line-height: 100px;
     font-size: 80px;
     color: white;
-  }
-
-  #ribs{
-      height:auto;
-      transform:rotate(90deg) ;
-      display: inline-block !important;
-  max-width: 12% !important;
-  }
-
-  #wings{
-    height:auto;
-  }
-
-  #fries{
-    display: inline-block !important;
-    max-width: 12% !important;
-  }
-
-  #chickensandwich{
-    display: inline-block !important;
-    max-width: 12% !important;
   }
 
 /* The Modal (background) */
@@ -522,7 +392,7 @@ a.article, a.article:hover {
   /* Google Maps */
   #gmap_canvas img {
     max-width: none !important;
-    background: none !important
+    background: none !important;
 }
 #number{
   background-color: rgb(0, 183, 255);
@@ -545,5 +415,17 @@ h3{
 }
 h4{
   color:black;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  height: 100%;
+  background-color: black;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
   text-align: center;
 }
