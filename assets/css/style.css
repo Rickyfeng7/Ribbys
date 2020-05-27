@@ -18,7 +18,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1em;
-    color: black;
+    color:gray;
 }
 
 a, a:hover, a:focus {
@@ -451,5 +451,5 @@ h4{
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1em;
-  color: #999;
+  color:white;
 }
