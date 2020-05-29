@@ -15,7 +15,7 @@
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1em;
     color:gray;
@@ -57,9 +57,7 @@ a, a:hover, a:focus {
   background: aliceblue;
 }
 
-/* .nav-item {
-  width:auto;
-} */
+
 .line {
     width: 100%;
     height: 1px;
@@ -453,3 +451,5 @@ h4{
   line-height: 1em;
   color:white;
 }
+
+/* Side bar */
