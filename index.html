@@ -28,45 +28,28 @@
             <img src="assets\images\Header-Logo.png" alt="logo" id="logo">
         </div>
     </div>
-    <div class="pos-f-t">
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Wrapper -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        
+        <!-- Brand -->
+        <!-- <a href="#" class="navbar-brand">Ribbys</a> -->
+        <!-- Online Ordering -->
+        <!-- <a href="https://www.toasttab.com/ribbys/v3" class="navbar-brand" target="_blank"><img src="https://cdn2.hubspot.net/hubfs/412971/Toast%20Digital%20Ordering%20Buttons/Online%20Ordering%20Buttons/OO_teal-small.png"></a> -->
+        <!-- Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
-                  <li class="nav-item">
-                      <a class="nav-link active" id="ribbys-tab" data-toggle="tab" href="#ribbys" role="tab"
-                          aria-controls="ribbys" aria-selected="true">Ribbys</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu"
-                          aria-selected="false">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab"
-                          aria-controls="community" aria-selected="false">Community</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                      <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab"
-                          aria-controls="" aria-selected="false"></a>
-                  </li> -->
-                  <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                          aria-controls="contact" aria-selected="false">Contact</a>
-                  </li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    <main role="main" class="main">
-        <div class="starter-template">
-            <!-- <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
+        </button>
+        <!-- Collapse Menu Items -->
+        <div class="collapse navbar-collapse clearfix" id="navbarNav">
+            <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="ribbys-tab" data-toggle="tab" href="#ribbys" role="tab"
                         aria-controls="ribbys" aria-selected="true">Ribbys</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about"
+                        aria-selected="false">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu"
@@ -76,14 +59,29 @@
                     <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab"
                         aria-controls="community" aria-selected="false">Community</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab"
-                        aria-controls="" aria-selected="false"></a>
-                </li> 
+                <!-- <li class="nav-item">
+                    <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab" aria-controls=""
+                        aria-selected="false"></a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                         aria-controls="contact" aria-selected="false">Contact</a>
                 </li>
+                <!-- <li class="nav-item float-right">
+                    <a class="nav-link navbar-right" id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order"
+                        aria-selected="false">Order Here</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="main">
+        <div class="starter-template">
+            <!-- <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab"
+                        aria-controls="" aria-selected="false"></a>
+                </li> 
             </ul> -->
 
             <!-- tab content starts here -->
@@ -119,7 +117,7 @@
                                     We can’t thank you enough for all your support these past couple of months!
                                 </p>
                                 <h4>
-                                    The Site is Current under construction.
+                                    Site is constantly being update. Please check back again.
                                 </h4>
                                 <h4>
                                     The
@@ -132,14 +130,22 @@
                     </div>
                 </div>
 
+
                 <!-- content 2 -->
+                <div class="tab-pane fade masonry-container" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <h2>
+                        Ribbys Wings and Ribs is a local fast casual restaurant that serves delcious creations to this community.  Ribbys' signature items, the Crispy Wings and the Crispy Ribs, are perfect to share with friends, family, or yourself!  Live to eat!
+                    </h2>
+                </div>
+
+                <!-- content 3 -->
                 <div class="tab-pane fade masonry-container" id="menu" role="tabpanel" aria-labelledby="menu-tab">
                     <img src="assets\images\combos.jpg" alt="menu" class="img-responsive">
                     <img src="assets\images\menu.jpg" alt="menu" class="img-responsive">
                     <img src="assets\images\Sides-01.jpg" alt="menu" class="img-responsive">
                 </div>
 
-                <!-- content 3 -->
+                <!-- content 4 -->
                 <div class="tab-pane fade masonry-container" id="community" role="tabpanel"
                     aria-labelledby="community-tab">
                     <h3>Community Out Reach</h3>
@@ -178,10 +184,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- content 4 -->
+                <!-- content 5 -->
                 <div class="tab-pane fade masonry-container" id="" role="tabpanel" aria-labelledby="-tab">
                 </div>
-                <!-- content 5 -->
+                <!-- content 6 -->
                 <div class="tab-pane fade masonry-container" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="card-group">
                         <div class="card">
@@ -222,7 +228,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- content 7 -->
+                <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
+                    <h2>
+                        Order
+                    </h2>
+                </div>
     </main>
+    
     <!-- Site footer -->
     <footer id="footer">
         <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
@@ -239,17 +252,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
-        
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
