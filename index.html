@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Ribby</title>
-
+    <link rel="stylesheet" href="https://ribbyswingsandribs.com/">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -16,105 +16,234 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Container -->
-    <div class="container">
-        <!-- The video -->
-        <video autoplay muted loop id="myVideo">
-            <source src="assets/images/Walkaround.MP4" type="video/mp4">
-        </video>
-
-        <div class="wrapper">
-            <!-- <button id="munch_loading_iframe" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/regular">Start
-                Your Order Here</button> -->
-
-                <button id="munch_loading_iframe_picture" iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/picture">ORDER ONLINE</button>
-
-                
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <img src="assets\images\RIBBYS-01.png" alt="logo">
-                </div>
-
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="#" class="fa fa-snapchat-ghost"></a>
-                <a href="#" class="fa fa-skype"></a>
-                <a href="#" class="fa fa-android"></a>
-                <a href="#" class="fa fa-dribbble"></a>
-                <a href="#" class="fa fa-vimeo"></a>
-                <a href="#" class="fa fa-tumblr"></a>
-                <a href="#" class="fa fa-vine"></a>
-                <a href="#" class="fa fa-foursquare"></a>
-                <a href="#" class="fa fa-stumbleupon"></a>
-                <a href="#" class="fa fa-flickr"></a>
-                <a href="#" class="fa fa-yahoo"></a>
-                <a href="#" class="fa fa-reddit"></a>
-                <a href="#" class="fa fa-rss"></a>
-            </nav>
-
-            <!-- Page Content Holder -->
-            <div id="content">
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-
-                        <button type="button" id="sidebarCollapse" class="navbar-btn ">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <div class="row col-3">
-                            <!-- Trigger/Open The Modal -->
-                            <button id="myBtn">Menu</button>
-
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <a target="javascript:void(0)" style="cursor:pointer"
-                                        id="munch_loading_iframe_picture"
-                                        iframe_src="https://join.munchnow.com/embed/AmH2HG/popup/picture">Order
-                                        Online</a>
-                                    <img src="assets\images\menu.jpg" alt="menu" class="img-responsive">
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                </nav>
-                <!-- Grid System Starts -->
-                <div class="row justify-content-md-center">
-                    <div class="col-9">
-                        2 of 3 (wider)
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <!-- Start of Caroscel -->
-                    <!-- Flickity HTML init -->
-                    <!-- <div class="gallery js-flickity">
-                            <img class="img-fluid" src="assets\images\Wings Flavor.jpeg" alt="Wings" id="wings">
-                            <img class="img-fluid" src="assets\images\Ribs.png" alt="ribs" id="ribs">
-                            <img src="assets\images\Fries.jpeg" alt="fries" id="fries">
-                            <img src="assets\images\Chcken Sandwich.jpeg" alt="cs" id="chickensandwich">
-                        </div> -->
-                </div>
-            </div>
+    <div class="header">
+        <div class="card-header">
+            <img src="assets\images\Header-Logo.png" alt="logo" id="logo">
         </div>
     </div>
-    </div>
+    <!-- Wrapper -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        
+        <!-- Brand -->
+        <!-- <a href="#" class="navbar-brand">Ribbys</a> -->
+        <!-- Online Ordering -->
+        <!-- <a href="https://www.toasttab.com/ribbys/v3" class="navbar-brand" target="_blank"><img src="https://cdn2.hubspot.net/hubfs/412971/Toast%20Digital%20Ordering%20Buttons/Online%20Ordering%20Buttons/OO_teal-small.png"></a> -->
+        <!-- Hamburger Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse Menu Items -->
+        <div class="collapse navbar-collapse clearfix" id="navbarNav">
+            <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="ribbys-tab" data-toggle="tab" href="#ribbys" role="tab"
+                        aria-controls="ribbys" aria-selected="true">Ribbys</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about"
+                        aria-selected="false">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu"
+                        aria-selected="false">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab"
+                        aria-controls="community" aria-selected="false">Community</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab" aria-controls=""
+                        aria-selected="false"></a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+                <!-- <li class="nav-item float-right">
+                    <a class="nav-link navbar-right" id="order-tab" data-toggle="tab" href="#order" role="tab" aria-controls="order"
+                        aria-selected="false">Order Here</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="main">
+        <div class="starter-template">
+            <!-- <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab"
+                        aria-controls="" aria-selected="false"></a>
+                </li> 
+            </ul> -->
+
+            <!-- tab content starts here -->
+            <div class="tab-content" id="myTabContent">
+
+                <!-- content 1 -->
+                <div class="tab-pane masonry-container fade show active" id="ribbys" role="tabpanel"
+                    aria-labelledby="ribbys-tab">
+                    <div class="card-body">
+                        <h2>
+                            Welcome to Ribbys
+                        </h2>
+                        <!-- The video -->
+                        <div class="col-12" id="video">
+                            <div class="embed-responsive embed-responsive-21by9">
+                                <video autoplay muted loop id="myVideo">
+                                    <source src="assets/images/Walkaround.MP4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-" id="top-box">
+                                <p id="text">
+                                    Due to the ongoing COVID-19 outbreak, dine-in service is currently not available.
+                                    However, we're still operating through take-out and delivery. </p>
+                                <p id="text">
+                                    Our biggest priority is the health and safety of our team and you, our guest. We're
+                                    taking steps to ensure all safety protocols are in place and that county health
+                                    official standards are addressed prior to reopening for dine-in service. We will
+                                    announce updates as soon as possible.
+                                </p>
+                                <p id="text">
+                                    We can’t thank you enough for all your support these past couple of months!
+                                </p>
+                                <h4 id="text">
+                                    Site is constantly being update. Please check back again.
+                                </h4>
+                                <h4 id="text">
+                                    The
+                                    Temporary Business Hours
+                                    Open 7 days a week
+                                    1:00PM - 10:00 PM
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- content 2 -->
+                <div class="tab-pane fade masonry-container" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <h2>
+                        Ribbys Wings and Ribs is a local fast casual restaurant that serves delicious creations to the community.  Ribbys signature items, Crispy Wings and Crispy Ribs, are perfect to share with friends, family, and yourself!  #Livetoeat #HomeoftheCrispyRib
+                    </h2>
+                </div>
+
+                <!-- content 3 -->
+                <div class="tab-pane fade masonry-container" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                    <img src="assets\images\combos.jpg" alt="menu" class="img-responsive">
+                    <img src="assets\images\menu.jpg" alt="menu" class="img-responsive">
+                    <img src="assets\images\Sides-01.jpg" alt="menu" class="img-responsive">
+                </div>
+
+                <!-- content 4 -->
+                <div class="tab-pane fade masonry-container" id="community" role="tabpanel"
+                    aria-labelledby="community-tab">
+                    <h3>Community OutReach</h3>
+                    <div class="card-group">
+                        <div class="card">
+                            <img class="card-img-top" src="assets\images\firefighter.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gwinnett County FireFighter</h5>
+                                <!-- <p class="card-text">
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets\images\officer.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gwinnett County Officers</h5>
+                                <!-- <p class="card-text">
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets\images\police.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lawrenceville Officers</h5>
+                                <!-- <p class="card-text">
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets\images\highschool.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Atlanta Gladiators</h5>
+                                <!-- <p class="card-text">
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content 5 -->
+                <div class="tab-pane fade masonry-container" id="" role="tabpanel" aria-labelledby="-tab">
+                </div>
+                <!-- content 6 -->
+                <div class="tab-pane fade masonry-container" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body" id="call">
+                                <h5 class="card-title">Give Us a call at
+                                    <a href="tel:7705458443" class="nav-link active">(770)545-8443</a>
+                                </h5>
+                                <a href="tel:7705458443" class="nav-link active fa fa-phone fa-4x"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" id="email">
+                                <h5 class="card-title"> Click Here to send us an
+                                    <a href="mailto:ribbysatl@gmail.com" class="nav-link active">Email</a>
+                                </h5>
+                                <a href="mailto:ribbysatl@gmail.com" class="nav-link active fa fa-envelope fa-4x"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-9 lec_animation_block lec_map-shadow skrollable skrollable-between"
+                                    data-bottom-top="transform:translate3d(0px, 100px, 0px)"
+                                    data-top-bottom="transform:translate3d(0px, -80px, 0px)"
+                                    style="transform: translate3d(0px, 8.877px, 0px); margin: 0 auto;">
+                                    <div class="lec_map_container ">
+                                        <div style="position:relative"><iframe width="100%" height="100%"
+                                                src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=LondRibbys%20Wings%20and%20Ribs%201956%20Duluth%20Hwy%2C%20Lawrenceville%2C%20GA%2030043on%2C%20United%20Kingdom+(Ribbys)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+                                                frameborder="0" scrolling="no" marginheight="0"
+                                                marginwidth="0"></iframe>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        We are located at 1956 Duluth Hwy Suite A-104, Lawrenceville, GA 30043
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content 7 -->
+                <!-- <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
+                    <h2>
+                        Order
+                    </h2>
+                </div> -->
+    </main>
+    
+    <!-- Site footer -->
+    <footer id="footer">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <a href="#">Ribbys</a>.
+        </p>
+    </footer>
+
+
+    <script type="text/javascript" src="https://rickyfeng7.github.io/Ribbys/"></script>
     <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -122,22 +251,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
     <!--  jQuery 1.7+  -->
-    <script src="jquery-1.9.1.min.js"></script>
     <script src="assets/js/main.js"></script>
-
     <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script>
 </body>
 
