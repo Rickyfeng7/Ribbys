@@ -9,8 +9,9 @@
     <title>Ribby</title>
     <link rel="stylesheet" href="https://ribbyswingsandribs.com/">
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -23,6 +24,28 @@
 </head>
 
 <body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Count Down Until Ribbys True Boneless Chicken </h4>
+                </div> -->
+
+            <div class="modal-body">
+                <img src="assets\images\fathers_day_1.png" id="modalImage">
+                <div class="countdown">
+                    <h4 class="timer">
+                        <span id="days"></span><span id="day">Days</span>
+                        <span id="hours"></span><span id="hour">Hours</span> 
+                        <span id="minutes"></span><span id="minute">Min</span>
+                        <span id="seconds"></span><span id="second">Sec</span> 
+                    </h4>
+                </div>
+            </div>
+    </div>
+</div>
+
+
     <div class="header">
         <div class="card-header">
             <img src="assets\images\Header-Logo.png" alt="logo" id="logo">
@@ -125,6 +148,7 @@
                                     Open 7 days a week
                                     1:00PM - 10:00 PM
                                 </h4>
+
                             </div>
                         </div>
                     </div>
@@ -242,15 +266,12 @@
         </p>
     </footer>
 
-
     <script type="text/javascript" src="https://rickyfeng7.github.io/Ribbys/"></script>
-    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script>
+    <!-- <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script> -->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
@@ -258,17 +279,16 @@
         crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
-    <!--  jQuery 1.7+  -->
+        <!-- Javascript Link -->
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script>
+
+    
+    <!-- <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script> -->
 </body>
 
 </html>
