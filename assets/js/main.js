@@ -1,81 +1,62 @@
 $(document).ready(function () {
 
-  // Get the modal
-  var modal = document.getElementById("myModal");
+  // timer
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
+  function countdown(endDate) {
+    var days, hours, minutes, seconds;
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+    endDate = new Date(endDate).getTime();
 
-  // When the user clicks the button, open the modal 
-  btn.onclick = function () {
-    modal.style.display = "block";
-  }
+    if (isNaN(endDate)) {
+      return;
+    }
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
-    modal.style.display = "none";
-  }
+    setInterval(calculate, 1000);
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    function calculate() {
+      var startDate = new Date().getTime();
+
+      var timeRemaining = parseInt((endDate - startDate) / 1000);
+
+      if (timeRemaining >= 0) {
+        days = parseInt(timeRemaining / 86400);
+        timeRemaining = (timeRemaining % 86400);
+
+        hours = parseInt(timeRemaining / 3600);
+        timeRemaining = (timeRemaining % 3600);
+
+        minutes = parseInt(timeRemaining / 60);
+        timeRemaining = (timeRemaining % 60);
+
+        seconds = parseInt(timeRemaining);
+
+        document.getElementById("days").innerHTML = parseInt(days, 10);
+        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+      } else {
+        return;
+      }
     }
   }
 
-  // Get the video
-  var video = document.getElementById("myVideo");
+  (function () {
+    countdown('06/19/2020 12:00:00 AM');
+  }());
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-
-  // Pause and play the video, and change the button text
-  function myFunction() {
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    } else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
-  // Carousel
-  // $('.main-gallery').flickity({
-  //     // options
-  //     cellAlign: 'left',
-  //     contain: true
-  //   });
-  //   var flkty = new Flickity( '.main-gallery', {
-  //     // options
-  //     cellAlign: 'left',
-  //     contain: true
-  //   });
-  function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-
-    // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  $("#myModal").modal('show');
 
   
 });
+
+
+function send() {
+  var link = 'mailto:email@example.com?subject=Message from '
+           +document.getElementById('email').value
+           +'&body='+ "Email: " + document.getElementById('email').value
+           + '%0D%0A' + "First Name: " + document.getElementById('firstName').value 
+           + '%0D%0A' + "Last Name: " + document.getElementById('lastName').value 
+          //  + '%0D%0A' + "EMail: " + document.getElementById('EMail').value 
+           + '%0D%0A' + "Job Title: " + document.getElementById('jobTitle').value;
+  window.location.href = link;
+}

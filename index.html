@@ -9,8 +9,9 @@
     <title>Ribby</title>
     <link rel="stylesheet" href="https://ribbyswingsandribs.com/">
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -23,6 +24,28 @@
 </head>
 
 <body>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Count Down Until Ribbys True Boneless Chicken </h4>
+                </div> -->
+
+            <div class="modal-body">
+                <img src="assets\images\fathers_day_1.png" id="modalImage">
+                <div class="countdown">
+                    <h4 class="timer">
+                        <span id="days"></span><span id="day">Days</span>
+                        <span id="hours"></span><span id="hour">Hours</span>
+                        <span id="minutes"></span><span id="minute">Min</span>
+                        <span id="seconds"></span><span id="second">Sec</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="header">
         <div class="card-header">
             <img src="assets\images\Header-Logo.png" alt="logo" id="logo">
@@ -30,11 +53,12 @@
     </div>
     <!-- Wrapper -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        
+
         <!-- Brand -->
         <!-- <a href="#" class="navbar-brand">Ribbys</a> -->
         <!-- Online Ordering -->
-        <!-- <a href="https://www.toasttab.com/ribbys/v3" class="navbar-brand" target="_blank"><img src="https://cdn2.hubspot.net/hubfs/412971/Toast%20Digital%20Ordering%20Buttons/Online%20Ordering%20Buttons/OO_teal-small.png"></a> -->
+        <a href="https://www.toasttab.com/ribbys/v3" class="navbar-brand" target="_blank"><img
+                src="https://cdn2.hubspot.net/hubfs/412971/Toast%20Digital%20Ordering%20Buttons/Online%20Ordering%20Buttons/OO_teal-small.png"></a>
         <!-- Hamburger Toggle -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,10 +79,14 @@
                     <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu"
                         aria-selected="false">Menu</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab"
                         aria-controls="community" aria-selected="false">Community</a>
-                </li>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" id="career-tab" data-toggle="tab" href="#career" role="tab"
+                        aria-controls="career" aria-selected="false">Career</a>
+                </li> -->
                 <!-- <li class="nav-item">
                     <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab" aria-controls=""
                         aria-selected="false"></a>
@@ -110,20 +138,22 @@
                                 <p id="text">
                                     Our biggest priority is the health and safety of our team and you, our guest. We're
                                     taking steps to ensure all safety protocols are in place and that county health
-                                    official standards are addressed prior to reopening for dine-in service. We will
+                                    standards are addressed prior to reopening for dine-in service. We will
                                     announce updates as soon as possible.
                                 </p>
                                 <p id="text">
-                                    We can’t thank you enough for all your support these past couple of months!
+                                    We can’t thank you enough for all your support these past couple of months! We look forward to serving you!
                                 </p>
                                 <h4 id="text">
-                                    Site is constantly being update. Please check back again.
+                                 
                                 </h4>
-                                <h4 id="text">
-                                    The Temporary Business Hours
-                                    Open 7 days a week
-                                    1:00PM - 10:00 PM
+                                <h4 id="text">       
+                                    <b>Temporary Business Hours</b>
+                                    <br>Open 7 days a week<br>
+                                    1:00 p.m. - 10:00 p.m.
                                 </h4>
+
+
                             </div>
                         </div>
                     </div>
@@ -133,8 +163,11 @@
                 <!-- content 2 -->
                 <div class="tab-pane fade masonry-container" id="about" role="tabpanel" aria-labelledby="about-tab">
                     <h2>
-                        Ribbys Wings and Ribs is a local fast casual restaurant that serves delicious creations to the community.  Ribbys signature items, Crispy Wings and Crispy Ribs, are perfect to share with friends, family, and yourself!  #Livetoeat #HomeoftheCrispyRib
+                        Ribbys Wings and Ribs is a local fast casual restaurant that serves delicious creations to the
+                        community. Ribbys signature items, Crispy Wings and Crispy Ribs, are perfect to share with
+                        friends, family, and yourself! #Livetoeat #HomeoftheCrispyRib
                     </h2>
+                    
                 </div>
 
                 <!-- content 3 -->
@@ -145,7 +178,7 @@
                 </div>
 
                 <!-- content 4 -->
-                <div class="tab-pane fade masonry-container" id="community" role="tabpanel"
+                <!-- <div class="tab-pane fade masonry-container" id="community" role="tabpanel"
                     aria-labelledby="community-tab">
                     <h3>Community OutReach</h3>
                     <div class="card-group">
@@ -153,39 +186,33 @@
                             <img class="card-img-top" src="assets\images\firefighter.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Gwinnett County FireFighter</h5>
-                                <!-- <p class="card-text">
-                                </p> -->
+    
                             </div>
                         </div>
                         <div class="card">
                             <img class="card-img-top" src="assets\images\officer.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Gwinnett County Officers</h5>
-                                <!-- <p class="card-text">
-                                </p> -->
                             </div>
                         </div>
                         <div class="card">
                             <img class="card-img-top" src="assets\images\police.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Lawrenceville Officers</h5>
-                                <!-- <p class="card-text">
-                                </p> -->
+        
                             </div>
                         </div>
                         <div class="card">
                             <img class="card-img-top" src="assets\images\highschool.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Atlanta Gladiators</h5>
-                                <!-- <p class="card-text">
-                                </p> -->
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- content 5 -->
-                <div class="tab-pane fade masonry-container" id="" role="tabpanel" aria-labelledby="-tab">
-                </div>
+                <!-- <div class="tab-pane fade masonry-container" id="" role="tabpanel" aria-labelledby="-tab">
+                </div> -->
                 <!-- content 6 -->
                 <div class="tab-pane fade masonry-container" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="card-group">
@@ -200,6 +227,7 @@
                         <div class="card">
                             <div class="card-body" id="email">
                                 <h5 class="card-title"> Click Here to send us an
+
                                     <a href="mailto:ribbysatl@gmail.com" class="nav-link active">Email</a>
                                 </h5>
                                 <a href="mailto:ribbysatl@gmail.com" class="nav-link active fa fa-envelope fa-4x"></a>
@@ -219,7 +247,7 @@
                                         </div>
                                     </div>
                                     <h4>
-                                        We are located at 1956 Duluth Hwy Suite A-104, Lawrenceville, GA 30043
+                                        We are located at 1956 Duluth Hwy Ste A 104, Lawrenceville, GA 30043
                                     </h4>
                                 </div>
                             </div>
@@ -227,13 +255,85 @@
                     </div>
                 </div>
                 <!-- content 7 -->
-                <!-- <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
+                <div class="tab-pane fade masonry-container" id="career" role="tabpanel" aria-labelledby="career-tab">
+
+
+                    <!-- <form name="myForm" action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain"
+                        onsubmit="return validate();"> -->
+                    <div class="card bg-light">
+                        <article class="card-body mx-auto" style="max-width: 400px;">
+                            <h4 class="card-title mt-3 text-center">Join The Ribbys Family</h4>
+                            <form name="myForm" enctype="text/plain" onsubmit="return send()">
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                    </div>
+                                    <input id="firstName" name="First Name" class="form-control" required placeholder="First Name " type="FirstName">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                    </div>
+                                    <input id="lastName" name="Last Name" class="form-control" required placeholder="Last Name " type="LastName">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                    </div>
+                                    <input id="email" name="EMail" class="form-control" required placeholder="Email address" type="email">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                    </div>
+                                    <input id="phoneNumber" name="Phone Number" class="form-control" required placeholder="Phone Number" type="tel" maxlength="14">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                                    </div>
+                                    <select class="form-control" id="jobTitle">
+                                        <option selected=""> Select job type</option>
+                                        <option value="Designer">Designer</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Accounting">Accounting</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <input type="submit" value="submit" name="submit"/>
+                    </div>
+                    <!-- </form>
+                    <form>
+                        <div>
+                          <label for="email">Email</label>
+                          <input id="email" type="email" required placeholder="example@example.com" />
+                        </div>
+                        <div>
+                          <label for="alpha">Alphanumeric Only</label>
+                          <input id="alpha" type="text" pattern="[a-zA-Z0-9]+" title="Only alphanumeric characters allowed" required/>
+                        </div>
+                          <div>
+                          <label for="select">Select</label>
+                          <select required>
+                            <option value="">Select option</option>
+                            <option value="1">Option one</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="password">Password</label>
+                          <input id="password" type="password" required/>
+                        </div>
+                        <input type="submit" value="Log In" />
+                      </form>
+
+                    content 8 -->
+                    <!-- <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
                     <h2>
                         Order
-                    </h2>
-                </div> -->
+                    </h2> -->
+                </div>
     </main>
-    
+
     <!-- Site footer -->
     <footer id="footer">
         <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
@@ -241,14 +341,13 @@
         </p>
     </footer>
 
-
     <script type="text/javascript" src="https://rickyfeng7.github.io/Ribbys/"></script>
-    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script>
+    <!-- <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG.js"></script> -->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Popper.JS -->
@@ -257,17 +356,18 @@
         crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
-    <!--  jQuery 1.7+  -->
+    <!-- Javascript Link -->
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script>
+
+
+    <!-- <script type="text/javascript" src="https://join.munchnow.com/script/popup/AmH2HG/picture.js"></script> -->
 </body>
 
 </html>
