@@ -67,8 +67,8 @@ function send() {
   var school = document.getElementById('School').value;
   
   
-  var link = 'mailto:19ricky92gmail.com?subject=Message from '
-           +document.getElementById('eMail').value
+  var link = 'mailto:ribbysjobs@gmail.com?subject= Message from '
+           + document.getElementById('eMail').value
            +'&body='+ "Email: " + eMail
            + '%0D%0A' + "Full Name: " + fullName
            + '%0D%0A' + "Phone Number: " + phoneNumber
