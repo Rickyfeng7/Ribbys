@@ -56,6 +56,7 @@ function printError(elemId, hintMsg) {
 
 
 function send() {
+
   // Retrieving the values of form elements 
   var fullName = document.getElementById('fullName').value;
   var eMail = document.getElementById('eMail').value;
@@ -65,7 +66,6 @@ function send() {
   var city = document.getElementById('city').value;
   var employment = document.getElementById('employment').value;
   var school = document.getElementById('School').value;
-  
   
   var link = 'mailto:ribbysjobs@gmail.com?subject= Message from '
            + document.getElementById('eMail').value
@@ -114,7 +114,6 @@ function validate() {
           printError("fullNameErr", "");
           fullNameErr = false;
       }
-
   }
 
   // Validate email address
@@ -143,7 +142,6 @@ function validate() {
           printError("schoolErr", "");
           schoolErr = false;
       }
-
   }
 
   // Address Validate 
