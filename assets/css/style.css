@@ -99,84 +99,6 @@ a, a:hover, a:focus {
 }
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-/* #content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
-#sidebarCollapse{
-    width: 40px;
-    height: 40px;
-    background: #f5f5f5;
-    cursor: pointer;
-}
-
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-    transition-delay: 0.2s;
-}
-
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px, 2px);
-}
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-}
- */
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-        transform: rotateY(90deg);
-    }
-    #sidebar.active {
-        margin-left: 0;
-        transform: none;
-    }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
-    #sidebarCollapse.active span {
-        margin: 0 auto;
-    }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-
-}
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -350,7 +272,7 @@ h4{
   width: 100%;
 }
 
-#days, #hours, #minutes, #seconds {
+#dayTimer, #hourTimer, #minuteTimer, #secondTimer {
   font-size: 39px;
   font-weight: 100;
   color: white;
@@ -362,6 +284,8 @@ h4{
   color: white;
   /* text-shadow: 0 0 20px rgb(211, 13, 13); */
 }
+
+
 /* .timer div {
   display: inline-block;
   min-width: 90px;
@@ -373,3 +297,58 @@ h4{
   font-size: .35em;
   font-weight: 400;
 } */
+
+/* career styling */
+
+.label{
+  display: block;
+  margin-top: auto;
+  width: 100%;
+}
+.label i {
+  color: #999;
+  font-size: 80%;
+  width: 100%;
+}
+
+#fullName, #eMail, #address, #city, #phoneNumber, #jobTitle, #employment, #School{
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  font-size: 110%;
+  font-weight: 100;
+  background: #006dcc;
+  border-color: #016BC1;
+  box-shadow: 0 3px 0 #0165b6;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #0165b6;
+} 
+
+#articleBody{
+  max-width: 50%;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+.error{
+  color: red;
+}

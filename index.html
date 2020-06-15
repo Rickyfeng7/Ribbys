@@ -35,10 +35,10 @@
                 <img src="assets\images\fathers_day_1.png" id="modalImage">
                 <div class="countdown">
                     <h4 class="timer">
-                        <span id="days"></span><span id="day">Days</span>
-                        <span id="hours"></span><span id="hour">Hours</span>
-                        <span id="minutes"></span><span id="minute">Min</span>
-                        <span id="seconds"></span><span id="second">Sec</span>
+                        <span id="dayTimer"></span><span id="day">Days</span>
+                        <span id="hourTimer"></span><span id="hour">Hours</span>
+                        <span id="minuteTimer"></span><span id="minute">Min</span>
+                        <span id="secondTimer"></span><span id="second">Sec</span>
                     </h4>
                 </div>
             </div>
@@ -83,10 +83,10 @@
                     <a class="nav-link" id="community-tab" data-toggle="tab" href="#community" role="tab"
                         aria-controls="community" aria-selected="false">Community</a>
                 </li> -->
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" id="career-tab" data-toggle="tab" href="#career" role="tab"
                         aria-controls="career" aria-selected="false">Career</a>
-                </li> -->
+                </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" id="-tab" data-toggle="tab" href="#" role="tab" aria-controls=""
                         aria-selected="false"></a>
@@ -101,6 +101,7 @@
                 </li> -->
             </ul>
         </div>
+        
     </nav>
 
     <main role="main" class="main">
@@ -142,13 +143,14 @@
                                     announce updates as soon as possible.
                                 </p>
                                 <p id="text">
-                                    We can’t thank you enough for all your support these past couple of months! We look forward to serving you!
+                                    We can’t thank you enough for all your support these past couple of months! We look
+                                    forward to serving you!
                                 </p>
                                 <h4 id="text">
-                                 
+
                                 </h4>
                                 <h4 id="text">
-                                  
+
                                     <b>Temporary Business Hours</b>
                                     <br>Open 7 days a week<br>
                                     1:00 p.m. - 10:00 p.m.
@@ -168,7 +170,7 @@
                         community. Ribbys signature items, Crispy Wings and Crispy Ribs, are perfect to share with
                         friends, family, and yourself! #Livetoeat #HomeoftheCrispyRib
                     </h2>
-                    
+
                 </div>
 
                 <!-- content 3 -->
@@ -257,82 +259,77 @@
                 </div>
                 <!-- content 7 -->
                 <div class="tab-pane fade masonry-container" id="career" role="tabpanel" aria-labelledby="career-tab">
-
-
-                    <!-- <form name="myForm" action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain"
-                        onsubmit="return validate();"> -->
-                    <div class="card bg-light">
-                        <article class="card-body mx-auto" style="max-width: 400px;">
+                    <div class="card bg-secondary">
+                        <article class="card-body mx-auto" id="articleBody">
                             <h4 class="card-title mt-3 text-center">Join The Ribbys Family</h4>
-                            <form name="myForm" enctype="text/plain" onsubmit="return send()">
+                            <form name="contactForm" onsubmit="return validate()" method="post">
+    
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
-                                    <input id="firstName" name="First Name" class="form-control" required placeholder="First Name " type="FirstName">
+                                    <label class="label">Full Name</label>
+                                    <input id="fullName" name="fullName" class="form-control" placeholder="First Name, Last Name">
+                                    <div class="error" id="fullNameErr" type="text"></div>
                                 </div>
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                                    </div>
-                                    <input id="lastName" name="Last Name" class="form-control" required placeholder="Last Name " type="LastName">
+                                    <label class="label">Email</label>
+                                    <input id="eMail" name="eMail" class="form-control" placeholder="Email Address"
+                                        type="email">
+                                    <div class="error" id="eMailErr"></div>
                                 </div>
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                                    </div>
-                                    <input id="email" name="EMail" class="form-control" required placeholder="Email address" type="email">
+                                    <label class="label">Address</label>
+                                    <input id="address" name="address" class="form-control" placeholder="Address"
+                                        type="text">
+                                    <div class="error" id="addressErr"></div>
                                 </div>
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                                    </div>
-                                    <input id="phoneNumber" name="Phone Number" class="form-control" required placeholder="Phone Number" type="tel" maxlength="14">
+                                    <label class="label">City</label>
+                                    <input id="city" name="city" class="form-control" placeholder="City" type="text">
+                                    <div class="error" id="cityErr"></div>
                                 </div>
                                 <div class="form-group input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                                    </div>
-                                    <select class="form-control" id="jobTitle">
-                                        <option selected=""> Select job type</option>
-                                        <option value="Designer">Designer</option>
-                                        <option value="Manager">Manager</option>
-                                        <option value="Accounting">Accounting</option>
+                                    <label class="label">Phone Number</label>
+                                    <input id="phoneNumber" name="Phone Number" class="form-control"
+                                        placeholder="Phone Number " type="tel" maxlength="10">
+                                    <div class="error" id="phoneNumberErr"></div>
+                                </div>
+                                <div class="form-group input-group">
+                                    <label class="label">Job Position</label>
+                                    <select name="jobTitle" id="jobTitle">
+                                        <option>Select</option>
+                                        <option disabled value="Manager">Manager</option>
+                                        <option disabled value="AssistantManager">Assistant Manager</option>
+                                        <option value="Cashier">Cashier</option>
+                                        <option value="Line Cook">Line Cook</option>
                                     </select>
+                                    <div class="error" id="jobTitleErr"></div>
                                 </div>
+                                <div class="form-group input-group">
+                                    <label class="label">Type of employment</label>
+                                    <select name="employment" id="employment">
+                                        <option>Select</option>
+                                        <option value="Full Time">Full Time</option>
+                                        <option value="Part Time">Part Time</option>
+                                    </select>
+                                    <div class="error" id="employmentErr"></div>
+                                </div>
+                                <label class="label">Highest Level of Education</label>
+                                <div class="form-group input-group">
+                                    <input id="School" name="School" class="form-control" placeholder="ie:High Shool Diploma, College Degree, etc" type="text">
+                                    <div class="error" id="schoolErr"></div>
+                                </div>
+                                <H3>Please attach resume after clicking submit</H3>
+                                <input type="submit" value="submit" />
                             </form>
-                            <input type="submit" value="submit" name="submit"/>
                     </div>
-                    <!-- </form>
-                    <form>
-                        <div>
-                          <label for="email">Email</label>
-                          <input id="email" type="email" required placeholder="example@example.com" />
-                        </div>
-                        <div>
-                          <label for="alpha">Alphanumeric Only</label>
-                          <input id="alpha" type="text" pattern="[a-zA-Z0-9]+" title="Only alphanumeric characters allowed" required/>
-                        </div>
-                          <div>
-                          <label for="select">Select</label>
-                          <select required>
-                            <option value="">Select option</option>
-                            <option value="1">Option one</option>
-                          </select>
-                        </div>
-                        <div>
-                          <label for="password">Password</label>
-                          <input id="password" type="password" required/>
-                        </div>
-                        <input type="submit" value="Log In" />
-                      </form>
+                </div>
 
-                    content 8 -->
-                    <!-- <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
+
+                <!-- content 8 -->
+                <!-- <div class="tab-pane fade masonry-container" id="order" role="tabpanel" aria-labelledby="order-tab">
                     <h2>
                         Order
                     </h2> -->
-                </div>
+            </div>
     </main>
 
     <!-- Site footer -->
