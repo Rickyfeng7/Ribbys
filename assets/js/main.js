@@ -148,7 +148,7 @@ function validate() {
   if(school == "") {
       printError("schoolErr", "Input your Highest Level of Education");
   } else {
-      // checks name is letters
+      // Regular expression checks name is letters
       var regex = /^[a-zA-Z\s]+$/;                
       if(regex.test(school) === false) {
           printError("schoolErr", "Input your Highest Level of Education");
@@ -163,7 +163,7 @@ function validate() {
   if(address == "") {
       printError("addressErr", "Enter your address ie: 1956 Duluth Hwy");
   } else {
-      // Rieular expression for basic address validation
+      // Regular expression for basic address validation
       var regex = /^\d+\s[A-z]+\s[A-z]+/;
       if(regex.test(address) === false) {
           printError("addressErr", "Enter a valid  address eg: 1956 Duluth Hwy");
