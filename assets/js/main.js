@@ -50,19 +50,6 @@ $(document).ready(function () {
 });
 
 
-function send() {
-  var link = 'mailto:ribbysjobs@gmail.com?subject=Message from '
-           +document.getElementById('email').value
-           +'&body='+ "Email: " + document.getElementById('email').value
-           + '%0D%0A' + "First Name: " + document.getElementById('firstName').value 
-           + '%0D%0A' + "Last Name: " + document.getElementById('lastName').value 
-          //  + '%0D%0A' + "EMail: " + document.getElementById('EMail').value 
-           + '%0D%0A' + "Job Title: " + document.getElementById('jobTitle').value;
-  window.location.href = link;
-}
-
-
-
 function printError(elemId, hintMsg) {
   document.getElementById(elemId).innerHTML = hintMsg;
 }
@@ -80,7 +67,7 @@ function send() {
   var school = document.getElementById('School').value;
   
   
-  var link = 'mailto:email@example.com?subject=Message from '
+  var link = 'mailto:ribbysjobs@gmail.com?subject=Message from '
            +document.getElementById('eMail').value
            +'&body='+ "Email: " + eMail
            + '%0D%0A' + "Full Name: " + fullName
